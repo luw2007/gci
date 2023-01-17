@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/daixiang0/gci"
+	"github.com/luw2007/gci"
 	g "github.com/golang"
 )
 

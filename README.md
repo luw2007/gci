@@ -34,13 +34,13 @@ Since v0.9.0, GCI always puts C import block as the first.
 To download and install the highest available release version -
 
 ```shell
-go install github.com/daixiang0/gci@latest
+go install github.com/luw2007/gci@latest
 ```
 
 You may also specify a specific version, for example:
 
 ```shell
-go install github.com/daixiang0/gci@v0.6.0
+go install github.com/luw2007/gci@v0.6.0
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ Flags:
   -h, --help              help for write
   -s, --section strings   Sections define how inputs will be processed. Section names are case-insensitive and may contain parameters in (). The section order is standard > default > custom > blank > dot. The default value is [standard,default].
                           standard - standard section that Golang provides officially, like "fmt"
-                          Prefix(github.com/daixiang0) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
+                          Prefix(github.com/luw2007) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
                           default - default section, contains all rest imports
                           blank - blank section, contains all blank imports. This section is not presed unless explicitly enabled. (default [standard,default])
       --skip-generated    Skip generated files
@@ -87,7 +87,7 @@ Flags:
   -h, --help              help for write
   -s, --section strings   Sections define how inputs will be processed. Section names are case-insensitive and may contain parameters in (). The section order is standard > default > custom > blank > dot. The default value is [standard,default].
                           standard - standard section thatolang provides officially, like "fmt"
-                          Prefix(github.com/daixiang0) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
+                          Prefix(github.com/luw2007) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
                           default - default section, contains all rest imports
                           blank - blank section, contains all blank imports. This section is not presed unless explicitly enabled.
                           dot - dot section, contains all dot imports. This section is not presed unless explicitly enabled. (default [standard,default])
@@ -107,7 +107,7 @@ Flags:
   -h, --help              help for write
   -s, --section strings   Sections define how inputs will be processed. Section names are case-insensitive and may contain parameters in (). The section order is standard > default > custom > blank > dot. The default value is [standard,default].
                           standard - standard section thatolang provides officially, like "fmt"
-                          Prefix(github.com/daixiang0) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
+                          Prefix(github.com/luw2007) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
                           default - default section, contains all rest imports
                           blank - blank section, contains all blank imports. This section is not presed unless explicitly enabled.
                           dot - dot section, contains all dot imports. This section is not presed unless explicitly enabled. (default [standard,default])
@@ -136,7 +136,7 @@ The old style is only for local tests, will be deprecated, please uses new style
 
 ## Examples
 
-Run `gci write -s standard -s default -s "prefix(github.com/daixiang0/gci)" main.go` and you will handle following cases:
+Run `gci write -s standard -s default -s "prefix(github.com/luw2007/gci)" main.go` and you will handle following cases:
 
 ### simple case
 
@@ -147,7 +147,7 @@ import (
   
   "fmt"
   
-  "github.com/daixiang0/gci"
+  "github.com/luw2007/gci"
 )
 ```
 
@@ -160,7 +160,7 @@ import (
 
     "golang.org/x/tools"
 
-    "github.com/daixiang0/gci"
+    "github.com/luw2007/gci"
 )
 ```
 
@@ -171,7 +171,7 @@ package main
 import (
   "fmt"
   go "github.com/golang"
-  "github.com/daixiang0/gci"
+  "github.com/luw2007/gci"
 )
 ```
 
@@ -184,7 +184,7 @@ import (
 
   go "github.com/golang"
 
-  "github.com/daixiang0/gci"
+  "github.com/luw2007/gci"
 )
 ```
 
@@ -197,9 +197,9 @@ import (
   go "github.com/golang"
   _ "github.com/golang/blank"
   . "github.com/golang/dot"
-  "github.com/daixiang0/gci"
-  _ "github.com/daixiang0/gci/blank"
-  . "github.com/daixiang0/gci/dot"
+  "github.com/luw2007/gci"
+  _ "github.com/luw2007/gci/blank"
+  . "github.com/luw2007/gci/dot"
 )
 ```
 
@@ -212,12 +212,12 @@ import (
 
   go "github.com/golang"
 
-  "github.com/daixiang0/gci"
+  "github.com/luw2007/gci"
 
-  _ "github.com/daixiang0/gci/blank"
+  _ "github.com/luw2007/gci/blank"
   _ "github.com/golang/blank"
 
-  . "github.com/daixiang0/gci/dot"
+  . "github.com/luw2007/gci/dot"
   . "github.com/golang/dot"
 )
 ```

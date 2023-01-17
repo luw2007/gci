@@ -4,9 +4,9 @@ import (
 	"github.com/spf13/cobra"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/daixiang0/gci/pkg/config"
-	"github.com/daixiang0/gci/pkg/log"
-	"github.com/daixiang0/gci/pkg/section"
+	"github.com/luw2007/gci/pkg/config"
+	"github.com/luw2007/gci/pkg/log"
+	"github.com/luw2007/gci/pkg/section"
 )
 
 type processingFunc = func(args []string, gciCfg config.Config) error
@@ -49,7 +49,7 @@ func (e *Executor) newGciCommand(use, short, long string, aliases []string, stdI
 
 	sectionHelp := `Sections define how inputs will be processed. Section names are case-insensitive and may contain parameters in (). The section order is standard > default > custom > blank > dot. The default value is [standard,default].
 standard - standard section that Golang provides officially, like "fmt"
-Prefix(github.com/daixiang0) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
+Prefix(github.com/luw2007) - custom section, groups all imports with the specified Prefix. Imports will be matched to the longest Prefix.
 default - default section, contains all rest imports
 blank - blank section, contains all blank imports. This section is not presed unless explicitly enabled.
 dot - dot section, contains all dot imports. This section is not presed unless explicitly enabled.`

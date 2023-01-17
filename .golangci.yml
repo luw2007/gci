@@ -57,7 +57,7 @@ linters-settings:
     sections:
       - standard                       # Captures all standard packages if they do not match another section.
       - default                        # Contains all imports that could not be matched to another section type.
-      - prefix(github.com/daixiang0/gci) # Groups all imports with the specified Prefix.
+      - prefix(github.com/luw2007/gci) # Groups all imports with the specified Prefix.
 
     # Separators that should be present between sections.
     # Default: ["newLine"]
@@ -70,7 +70,7 @@ linters-settings:
   goimports:
     # put imports beginning with prefix after 3rd-party packages;
     # it's a comma-separated list of prefixes
-    local-prefixes: github.com/daixiang0/gci
+    local-prefixes: github.com/luw2007/gci
 
 linters:
   fast: false

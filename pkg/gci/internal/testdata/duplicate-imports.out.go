@@ -5,6 +5,6 @@ import (
 
 	g "github.com/golang"
 
-	"github.com/daixiang0/gci"
-	a "github.com/daixiang0/gci"
+	"github.com/luw2007/gci"
+	a "github.com/luw2007/gci"
 )

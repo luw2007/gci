@@ -7,9 +7,9 @@ import (
 	. "github.com/golang/dot"
 	_ "github.com/golang/blank"
 
-	"github.com/daixiang0/a"
-	"github.com/daixiang0/gci"
-	"github.com/daixiang0/gci/subtest"
-	. "github.com/daixiang0/gci/dot"
-	_ "github.com/daixiang0/gci/blank"
+	"github.com/luw2007/a"
+	"github.com/luw2007/gci"
+	"github.com/luw2007/gci/subtest"
+	. "github.com/luw2007/gci/dot"
+	_ "github.com/luw2007/gci/blank"
 )

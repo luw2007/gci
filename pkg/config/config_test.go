@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/daixiang0/gci/pkg/section"
+	"github.com/luw2007/gci/pkg/section"
 )
 
 var testFilesPath = "../gci/internal/testdata"
@@ -33,21 +33,21 @@ func TestInitGciConfigFromYAML(t *testing.T) {
 // the custom sections sort alphabetically as default.
 func TestParseOrder(t *testing.T) {
 	cfg := YamlConfig{
-		SectionStrings: []string{"default", "prefix(github/daixiang0/gci)", "prefix(github/daixiang0/gai)"},
+		SectionStrings: []string{"default", "prefix(github/luw2007/gci)", "prefix(github/luw2007/gai)"},
 	}
 	gciCfg, err := cfg.Parse()
 	assert.NoError(t, err)
-	assert.Equal(t, section.SectionList{section.Default{}, section.Custom{Prefix: "github/daixiang0/gai"}, section.Custom{Prefix: "github/daixiang0/gci"}}, gciCfg.Sections)
+	assert.Equal(t, section.SectionList{section.Default{}, section.Custom{Prefix: "github/luw2007/gai"}, section.Custom{Prefix: "github/luw2007/gci"}}, gciCfg.Sections)
 }
 
 func TestParseCustomOrder(t *testing.T) {
 	cfg := YamlConfig{
-		SectionStrings: []string{"default", "prefix(github/daixiang0/gci)", "prefix(github/daixiang0/gai)"},
+		SectionStrings: []string{"default", "prefix(github/luw2007/gci)", "prefix(github/luw2007/gai)"},
 		Cfg: BoolConfig{
 			CustomOrder: true,
 		},
 	}
 	gciCfg, err := cfg.Parse()
 	assert.NoError(t, err)
-	assert.Equal(t, section.SectionList{section.Default{}, section.Custom{Prefix: "github/daixiang0/gci"}, section.Custom{Prefix: "github/daixiang0/gai"}}, gciCfg.Sections)
+	assert.Equal(t, section.SectionList{section.Default{}, section.Custom{Prefix: "github/luw2007/gci"}, section.Custom{Prefix: "github/luw2007/gai"}}, gciCfg.Sections)
 }

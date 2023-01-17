@@ -5,5 +5,5 @@ import (
 
 	"github.com/golang" // golang
 
-	alias "github.com/daixiang0/gci"
+	alias "github.com/luw2007/gci"
 )

@@ -1,7 +1,7 @@
 package gci
 
 import (
-	"github.com/daixiang0/gci/pkg/gci"
+	"github.com/luw2007/gci/pkg/gci"
 )
 
 // diffCmd represents the diff command

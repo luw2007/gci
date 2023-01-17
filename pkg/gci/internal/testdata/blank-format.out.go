@@ -6,5 +6,5 @@ import (
 	// comment
 	g "github.com/golang" // comment
 
-	"github.com/daixiang0/gci"
+	"github.com/luw2007/gci"
 )

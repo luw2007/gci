@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/daixiang0/gci/pkg/config"
-	"github.com/daixiang0/gci/pkg/gci"
-	"github.com/daixiang0/gci/pkg/log"
-	"github.com/daixiang0/gci/pkg/section"
+	"github.com/luw2007/gci/pkg/config"
+	"github.com/luw2007/gci/pkg/gci"
+	"github.com/luw2007/gci/pkg/log"
+	"github.com/luw2007/gci/pkg/section"
 )
 
 type Executor struct {

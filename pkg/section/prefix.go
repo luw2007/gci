@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/daixiang0/gci/pkg/parse"
-	"github.com/daixiang0/gci/pkg/specificity"
+	"github.com/luw2007/gci/pkg/parse"
+	"github.com/luw2007/gci/pkg/specificity"
 )
 
 type Custom struct {

@@ -9,10 +9,10 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/passes/inspect"
 
-	"github.com/daixiang0/gci/pkg/config"
-	"github.com/daixiang0/gci/pkg/gci"
-	"github.com/daixiang0/gci/pkg/io"
-	"github.com/daixiang0/gci/pkg/log"
+	"github.com/luw2007/gci/pkg/config"
+	"github.com/luw2007/gci/pkg/gci"
+	"github.com/luw2007/gci/pkg/io"
+	"github.com/luw2007/gci/pkg/log"
 )
 
 const (

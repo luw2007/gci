@@ -7,7 +7,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/daixiang0/gci/pkg/section"
+	"github.com/luw2007/gci/pkg/section"
 )
 
 var defaultOrder = map[string]int{

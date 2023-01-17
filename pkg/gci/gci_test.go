@@ -9,9 +9,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/daixiang0/gci/pkg/config"
-	"github.com/daixiang0/gci/pkg/io"
-	"github.com/daixiang0/gci/pkg/log"
+	"github.com/luw2007/gci/pkg/config"
+	"github.com/luw2007/gci/pkg/io"
+	"github.com/luw2007/gci/pkg/log"
 )
 
 func init() {
